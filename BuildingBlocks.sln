@@ -147,9 +147,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structure", "Structure", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructureByEnvelope", "StructureByEnvelope", "{FFEA9B75-30AF-419C-A025-7EC3D4FEB81F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureByEnvelope", "Structure\StructureByEnvelope\src\StructureByEnvelope.csproj", "{5063299B-676A-4375-B005-EEFBC38E91D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureByEnvelope", "Structure\StructureByEnvelope\src\Structure.csproj", "{5063299B-676A-4375-B005-EEFBC38E91D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureByEnvelope.tests", "Structure\StructureByEnvelope\test\StructureByEnvelope.tests.csproj", "{E0261316-1D81-4FD2-8F28-4FEC072F527C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureByEnvelope.tests", "Structure\StructureByEnvelope\test\Structure.tests.csproj", "{E0261316-1D81-4FD2-8F28-4FEC072F527C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
