@@ -43,13 +43,15 @@ namespace EnvelopeBySketch.Tests
             var inputs =
                 new EnvelopeBySketchInputs(
                     perimeter: polygon,
-                    buildingHeight: 27.0,
-                    foundationDepth: 3.0,
-                    useSetbacks: true,
                     setbackInterval: 50.0,
+                    useSetbacks: true,
                     setbackDepth: 5.0,
                     minimumTierArea: 100.0,
-                    "", "", new Dictionary<string, string>(), "", "", "");
+                    buildingHeight: 50,
+                    foundationDepth: 3.0,
+                    bucketName: "", 
+                    uploadsBucket: "", 
+                    new Dictionary<string, string>(), "", "", "");
             var outputs =
                 EnvelopeBySketch.Execute(new Dictionary<string, Model> { { "Envelope", new Model() } }, inputs);
             System.IO.File.WriteAllText(OUTPUT + "EnvelopeBySketch.json", outputs.Model.ToJson());
