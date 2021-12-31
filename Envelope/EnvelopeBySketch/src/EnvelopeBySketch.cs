@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using Elements;
 using Elements.Geometry;
+using Elements.Geometry.Solids;
+using Elements;
+
 
 namespace EnvelopeBySketch
 {
