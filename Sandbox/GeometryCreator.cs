@@ -14,7 +14,7 @@ namespace Sandbox
     class GeometryCreator
     {
 
-        private const string OUTPUT = "_output";
+        private const string OUTPUT = "_output/";
         public static string CreateGeometry()
         {
             var polygon =
@@ -50,13 +50,16 @@ namespace Sandbox
                     uploadsBucket: "",
                     new Dictionary<string, string>(), "", "", "");
 
+            System.IO.Directory.CreateDirectory(OUTPUT);
+
             var outputs =
                 EnvelopeBySketch.EnvelopeBySketch.Execute(new Dictionary<string, Model> { { "Envelope", new Model() } }, inputs);
             System.IO.File.WriteAllText(OUTPUT + "Sandbox_EnvelopeBySketch.json", outputs.Model.ToJson());
 
-            outputs.Model.ToGlTF(OUTPUT + "Sandbox.glb");
+            string output_path = OUTPUT + "Sandbox.glb";
+            outputs.Model.ToGlTF(output_path);
 
-            return (OUTPUT + "Sandbox.glb");
+            return output_path;
 
         }
 

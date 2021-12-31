@@ -25,7 +25,7 @@ namespace Sandbox
         public void ShowGeometry()
         {
             // load resultant HTML in default browser
-            System.Diagnostics.Process.Start(m_OutputHTML);
+            System.Diagnostics.Process.Start("C:/Program Files/Google/Chrome/Application/Chrome.exe",m_OutputHTML);
         }
 
         private void SetupVisualiser()
@@ -33,14 +33,14 @@ namespace Sandbox
             m_OutputHTML = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".html";
 
             // load GLTF scene via an instance of Scene
-            m_Scene = new Aspose.ThreeD.Scene("template.gltf");
+            m_Scene = new Aspose.ThreeD.Scene(m_PathToGLTF);
             // create an object of Html5SaveOptions and set properties for formatting
             m_SaveOptions = new Aspose.ThreeD.Formats.Html5SaveOptions()
             {
                 // turn off the grid
-                ShowGrid = false,
+                ShowGrid = true,
                 // turn off the user interface
-                ShowUI = false
+                ShowUI = true
             };
 
             // save 3D scene as HTML5
