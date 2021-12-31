@@ -2,8 +2,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dependencies\RoofBySketch.Dependencies.csproj" />
-    <ProjectReference Include="..\..\..\..\Hypar\Hypar.Functions\src\Hypar.Functions.csproj" />
-    <ProjectReference Include="..\..\..\..\GeometryEx\GeometryEx\GeometryEx.csproj" />
+    <ProjectReference Include="..\..\..\..\HyparPelogic\HyparFunctions\src\HyparFunctions.csproj" />
+    <ProjectReference Include="..\..\..\..\HyparGeometryEx\GeometryEx\GeometryEx.csproj" />
   </ItemGroup>
 
   <ItemGroup>
